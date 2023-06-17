@@ -1,0 +1,24 @@
+ion-item {
+    --highlight-background: var(--ion-color-zauner-orange);
+}
+
+.title {
+    padding-top: 12px;
+    padding-left: 10px;
+    font-family: SFBold !important;
+}
+
+
+.label {
+    font-family: SFBold !important;
+}
+
+.text {
+    font-family: SFRegular !important;
+}
+
+ion-select, ion-input{
+    font-family: SFRegular !important;
+    --placeholder-opacity: 0.8 !important;
+    color:gray;
+}

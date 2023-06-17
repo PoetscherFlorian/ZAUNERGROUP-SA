@@ -1,0 +1,49 @@
+ion-content{
+  --background: url(../../assets/zauner-background.jpg)  no-repeat cover fixed center;
+  background: url(../../assets/zauner-background.jpg) no-repeat fixed center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+#logo {
+  height: 40%;
+  width: 40%;
+  margin-top: 30%;
+  margin-bottom: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-item {
+  width: 250px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.email-item {
+  width: 250px;
+  margin: auto;
+  margin-top: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+ 
+ion-input.name {
+  --background: white;
+  --color: black;
+  --placehoder-color: orange;
+  --placehodler-opacity: .8;
+  --padding-bottom: 10px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+  --padding-top: 10px;
+}
+
+.button {
+  width: 200px;  
+}

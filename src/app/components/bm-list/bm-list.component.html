@@ -1,0 +1,78 @@
+<ion-title mode="md" class="title">Beobachtung {{componentID}}</ion-title>
+<ion-card>
+  <ion-item>
+    <ion-label class="label">Beobachtung:</ion-label>
+    <ion-input class="ion-text-right" [(ngModel)]="observation" placeholder="kurz, in 2 Worten"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label" text-wrap>PSV</ion-label>
+    <ion-select okText="OK" cancelText="Abbrechen">
+      <ion-select-option value="01">Positive Beobachtung</ion-select-option>
+      <ion-select-option value="02">Unsichere Handlung</ion-select-option>
+      <ion-select-option value="03">Unsicherer Zustand</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label" text-wrap>TEO</ion-label>
+    <ion-select okText="OK" cancelText="Abbrechen">
+      <ion-select-option value="01">Maßnahme umgesetzt und wirksam</ion-select-option>
+      <ion-select-option value="02">Maßnahme felt oder unwirksam</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label" text-wrap>TFS</ion-label>
+    <ion-select [multiple]="true" okText="OK" cancelText="Abbrechen">
+      <ion-select-option value="01">Gerüste</ion-select-option>
+      <ion-select-option value="02">Leitern</ion-select-option>
+      <ion-select-option value="03">Arbeitsplattformen</ion-select-option>
+      <ion-select-option value="04">Enge Räume</ion-select-option>
+      <ion-select-option value="05">Heissarbeiten</ion-select-option>
+      <ion-select-option value="06">Heben von Lasten</ion-select-option>
+      <ion-select-option value="07">Kraftbetriebene Arbeitsmittel</ion-select-option>
+      <ion-select-option value="08">Gruben, Gräben, Künetten</ion-select-option>
+      <ion-select-option value="09">Prinzipien und Regeln</ion-select-option>
+      <ion-select-option value="20">Persönliche Schutzausrüstung</ion-select-option>
+      <ion-select-option value="11">Ereignisse (Nearmiss)</ion-select-option>
+      <ion-select-option value="12">Höhenarbeiten</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label" text-wrap>MAG</ion-label>
+    <ion-select okText="OK" cancelText="Abbrechen">
+      <ion-select-option value="01">Positive Reaktion</ion-select-option>
+      <ion-select-option value="02">Negative Reaktion</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label">Maßnahme:</ion-label>
+    <ion-input class="ion-text-right" placeholder="bei fehlenden TEOs"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label">Wer:</ion-label>
+    <ion-input class="ion-text-right" placeholder="Name eingeben"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label">Bis wann:</ion-label>
+    <ion-input placeholder="Datum auswählen"
+      value="{{ date | date: 'dd.MM.yyyy' }}"
+      id="date"
+      class="ion-text-end"
+    ></ion-input>
+    <ion-popover trigger="date" size="cover">
+      <ng-template>
+        <ion-datetime
+          presentation="date"
+          [(ngModel)]="date"
+          locale="sl-SI"
+        ></ion-datetime>
+      </ng-template>
+    </ion-popover>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label" text-wrap>Status</ion-label>
+      <ion-select placeholder="Auswählen" okText="OK" cancelText="Abbrechen">
+        <ion-select-option value="01">in Arbeit</ion-select-option>
+        <ion-select-option value="02">fertig</ion-select-option>
+      </ion-select>
+  </ion-item>
+</ion-card>

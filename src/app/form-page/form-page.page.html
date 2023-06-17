@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="zauner-blau">
+    <ion-title class="header-title ion-text-center">Safety Week Audit ({{currentDate | date:'dd.MM.yyyy'}})</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title mode="md" class="title">Generelle Informationen</ion-title>
+  <ion-list>
+    <app-general-data></app-general-data>
+  </ion-list>
+
+  <ion-list #createBMhere>
+    <app-bm-list></app-bm-list>
+  </ion-list>
+
+
+  <ion-fab horizontal="center">
+    <ion-fab-button (click)="addNewComponent()" class="add-button" color="zauner-orange">
+      <ion-icon class="add-icon" name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<ion-footer class="footer">
+  <ion-toolbar color="zauner-blau">
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button routerLink="/main-page" class="cancel-button" color="light">Abbrechen</ion-button>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-button class="save-button" color="zauner-orange">Speichern</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

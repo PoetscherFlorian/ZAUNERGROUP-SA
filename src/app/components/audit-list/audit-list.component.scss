@@ -1,0 +1,57 @@
+.card {
+    padding-top: 10px;
+}
+
+.card-title, .card-sub, .card-content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.edit-button {
+    font-family: SFBold !important;
+    --color: #003a57;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.delete-button {
+    position: fixed;
+    right: 135px;
+    bottom: 10px;
+}
+
+.status-completed {
+    font-family: SFBold !important;
+    color: #28ba62;
+    position: fixed;
+    left: 15px;
+    bottom: 22px;
+}
+
+.icon-completed {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.status-pending {
+    font-family: SFBold !important;
+    color: #e0ac08;
+    position: fixed;
+    left: 15px;
+    bottom: 22px;
+}
+
+.icon-pending {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-title {
+    font-family: SFBold !important;
+    padding-bottom: 5px;
+}
+
+.card, .card-sub, .card-content {
+    font-family: SFRegular !important;
+}

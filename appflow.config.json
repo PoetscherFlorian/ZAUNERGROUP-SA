@@ -1,0 +1,13 @@
+{
+    "apps":
+    [
+        {
+            "appId": "7cd9cd9b",
+            "root": "ZAUNERGROUP-IonicApp/App",
+            "dependencyInstallCommand": "<install_cmd>",
+            "webBuildCommand": "<web_build_cmd>",
+            "iosPath": "<ios_path>",
+            "androidPath": "<android_path>"
+        }
+    ]
+}

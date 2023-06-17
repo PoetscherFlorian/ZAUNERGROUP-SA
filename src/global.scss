@@ -1,0 +1,115 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+	--ion-color-zauner-orange: #ec6201;
+	--ion-color-zauner-orange-rgb: 236,98,1;
+	--ion-color-zauner-orange-contrast: #ffffff;
+	--ion-color-zauner-orange-contrast-rgb: 0,0,0;
+	--ion-color-zauner-orange-shade: #d05601;
+	--ion-color-zauner-orange-tint: #ee721a;
+}
+
+.ion-color-zauner-orange {
+	--ion-color-base: var(--ion-color-zauner-orange);
+	--ion-color-base-rgb: var(--ion-color-zauner-orange-rgb);
+	--ion-color-contrast: var(--ion-color-zauner-orange-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-zauner-orange-contrast-rgb);
+	--ion-color-shade: var(--ion-color-zauner-orange-shade);
+	--ion-color-tint: var(--ion-color-zauner-orange-tint);
+}
+
+:root {
+	--ion-color-zauner-blau: #003a57;
+	--ion-color-zauner-blau-rgb: 0,56,85;
+	--ion-color-zauner-blau-contrast: #ffffff;
+	--ion-color-zauner-blau-contrast-rgb: 255,255,255;
+	--ion-color-zauner-blau-shade: #00314b;
+	--ion-color-zauner-blau-tint: #1a4c66;
+}
+
+.ion-color-zauner-blau {
+	--ion-color-base: var(--ion-color-zauner-blau);
+	--ion-color-base-rgb: var(--ion-color-zauner-blau-rgb);
+	--ion-color-contrast: var(--ion-color-zauner-blau-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-zauner-blau-contrast-rgb);
+	--ion-color-shade: var(--ion-color-zauner-blau-shade);
+	--ion-color-tint: var(--ion-color-zauner-blau-tint);
+}
+
+ion-select::part(placeholder),
+ion-select::part(text) {
+  white-space: normal !important;
+}
+
+ion-alert.select-alert {
+  --width: 33vw !important;
+  --max-width: 66vw !important;
+  
+  .select-interface-option .alert-radio-label,
+  .select-interface-option .alert-checkbox-label {
+    white-space: normal !important;
+  }
+}
+
+:root {
+	.alert-radio-label {
+		height: 100% !important;
+		display: block !important;
+		font-family: SFRegular !important;
+	}
+
+	.alert-button-inner, .alert-title {
+		font-family: SFBold !important;
+	}
+
+	.alert-radio-group {
+		padding-bottom: 13px !important;
+	}
+
+}
+
+@font-face {
+	font-family: 'SFRegular';
+	src: url("assets/fonts/FontsFree-Net-SFProDisplay-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'SFBold';
+	src: url("assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+}
+
+
+// ion-content {
+// 	// overwrite inline styles
+// 	--offset-bottom: auto!important;
+// 	--overflow: hidden;
+// 	overflow: auto;
+// 	&::-webkit-scrollbar {
+// 	  display: none;
+// 	}
+//   }

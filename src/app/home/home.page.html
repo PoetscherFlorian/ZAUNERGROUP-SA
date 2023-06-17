@@ -1,0 +1,23 @@
+<ion-content class="background">
+    <div>
+        <img src="assets/Zauner_Icon_alleine.svg" id="logo">
+    </div>
+
+    <ion-item class="name-item" lines="none">
+        <ion-input class="name" [(ngModel)]="name" [ClearOnEdit]="true" placeholder="Name"></ion-input>
+    </ion-item>
+
+    <ion-item class="email-item" lines="none">
+        <ion-input class="name" type="email" [(ngModel)]="email" [ClearOnEdit]="true" placeholder="E-Mail"></ion-input>
+    </ion-item>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col class="ion-text-center">
+                <ion-button (click)="onSubmit()" routerLink="/main-page" class="button" color=zauner-orange>Anmelden</ion-button>
+            </ion-col>           
+        </ion-row>
+    </ion-grid>
+
+
+</ion-content>
