@@ -3,7 +3,7 @@
     [
         {
             "appId": "6ba10d74",
-            "root": "App",
+            "root": "D:/Schule/Maturaprojekt Zauner/ZAUNERGROUP-IonicApp/App/",
             "dependencyInstallCommand": "<install_cmd>",
             "webBuildCommand": "<web_build_cmd>",
             "iosPath": "<ios_path>",
