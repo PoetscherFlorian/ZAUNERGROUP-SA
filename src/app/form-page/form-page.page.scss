@@ -12,3 +12,11 @@
     margin-top: 20px;
     margin-bottom: 200px;
 }
+
+ion-item {
+    --highlight-background: var(--ion-color-zauner-orange);
+}
+
+.input {
+    font-family: SFRegular !important;
+}

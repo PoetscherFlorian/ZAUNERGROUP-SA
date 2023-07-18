@@ -5,12 +5,38 @@
 </ion-header>
 
 <ion-content>
-  <ion-title mode="md" class="title">Generelle Informationen</ion-title>
-  <ion-list>
-    <app-general-data></app-general-data>
-  </ion-list>
+  <form [formGroup]="formData">
+    <ion-list>
+      <ion-title mode="md" class="title">Generelle Informationen</ion-title>
+        <ion-item>
+          <ion-icon name="person" slot="start" color="zauner-blau"></ion-icon>
+          <ion-text class="input">{{name}}</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="id-card" slot="start" color="zauner-blau"></ion-icon>
+          <ion-input formControlName="role" class="input" placeholder="Funktion"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="location" slot="start" color="zauner-blau"></ion-icon>
+          <ion-input formControlName="location" class="input" placeholder="Ort">{{location}}</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="locate" slot="start" color="zauner-blau"></ion-icon>
+          <ion-input formControlName="workSite" class="input" placeholder="Baustelle/Bereich">{{workSite}}</ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="chatbox-ellipses" slot="start" color="zauner-blau"></ion-icon>
+          <ion-input formControlName="comment" class="input" placeholder="Bemerkung">{{comment}}</ion-input>
+        </ion-item>
+    </ion-list>
+  </form> 
 
-  <ion-list #createBMhere>
+
+
+
+
+
+  <!-- <ion-list #createBMhere>
     <app-bm-list></app-bm-list>
   </ion-list>
 
@@ -19,7 +45,7 @@
     <ion-fab-button (click)="addNewComponent()" class="add-button" color="zauner-orange">
       <ion-icon class="add-icon" name="add"></ion-icon>
     </ion-fab-button>
-  </ion-fab>
+  </ion-fab> -->
 </ion-content>
 
 <ion-footer class="footer">
@@ -29,7 +55,7 @@
         <ion-button routerLink="/main-page" class="cancel-button" color="light">Abbrechen</ion-button>
       </ion-col>
       <ion-col class="ion-text-center">
-        <ion-button class="save-button" color="zauner-orange">Speichern</ion-button>
+        <ion-button (click)="onSubmit()" class="save-button" color="zauner-orange">Speichern</ion-button>
       </ion-col>
     </ion-row>
   </ion-toolbar>

@@ -14,7 +14,8 @@ export class GeneralDataComponent implements OnInit {
   workSite:string;
   comment:string;
 
-  constructor(private auditdetailsservice:AuditdetailsService) { }
+  constructor(private auditdetailsservice:AuditdetailsService) { 
+  }
 
   ngOnInit() {
       const data = this.auditdetailsservice.getAuditData();
